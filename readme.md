@@ -53,8 +53,6 @@ When you visit `"/:name"` (ie: `"localhost:YOURPORT/randy"`), the greeting shoul
 
 **This homework assignment is due by Monday at 10AM ET** 
 
-From this point forward, homework during the week will be due by the beginning of the following week. This does _not_ mean to save the entire week's homework for Sunday evening, however. Learn to manage your time properly! 
-
 **To submit your homework, don't forget to...**
 
   - Create a `.gitignore` file and add `node_modules` to it 
