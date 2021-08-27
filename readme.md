@@ -51,7 +51,7 @@ When you visit `"/:name"` (ie: `"localhost:YOURPORT/randy"`), the greeting shoul
 
 # Submission 
 
-**This homework assignment is due by Wednesday at 9AM ET** 
+**This homework assignment is due by Monday at 9AM ET** 
 
 **To submit your homework, don't forget to...**
 
