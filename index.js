@@ -2,7 +2,7 @@ const express = require('express');
 const app = express()
 app.set('view engine', 'hbs')
 
-const port =  4000;
+const port = process.env.PORT || 4000;
 
 app.listen( port, () => { console.log(`E-compliment app running on port ${port}`)})
 app.use(express.json())
@@ -20,9 +20,9 @@ const compliments = [
 //   {newColor: randomColors, newCompliments: randomCompliments}
 
   app.get('/', (req, res) => { 
-    // let randomCompliments = compliments[Math.floor(Math.random()*compliments.length)]
-    // let randomColors = colors[Math.floor(Math.random()*colors.length)]
-    res.render ('welcome')
+    let randomCompliments = compliments[Math.floor(Math.random()*compliments.length)]
+    let randomColors = colors[Math.floor(Math.random()*colors.length)]
+    res.render ('welcome', {newCompliments: randomCompliments})
 }
 )
 
