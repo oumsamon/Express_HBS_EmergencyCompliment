@@ -27,8 +27,8 @@ const compliments = [
 )
 
   app.get('/:name', (req, res) => { 
-      let randomCompliments = compliments
-
-      res.render('index', {name: req.params.name})
+    let randomCompliments = compliments[Math.floor(Math.random()*compliments.length)]
+    let randomColors = colors[Math.floor(Math.random()*colors.length)]
+      res.render('index', {name: req.params.name, newCompliments: randomCompliments, newColor: randomColors })
     }
     )
