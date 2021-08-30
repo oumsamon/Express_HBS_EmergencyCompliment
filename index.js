@@ -22,7 +22,7 @@ const compliments = [
   app.get('/', (req, res) => { 
     let randomCompliments = compliments[Math.floor(Math.random()*compliments.length)]
     let randomColors = colors[Math.floor(Math.random()*colors.length)]
-    res.render ('welcome', {newCompliments: randomCompliments})
+    res.render ('welcome', {newCompliments: randomCompliments, newColor: randomColors})
 }
 )
 
